@@ -1,0 +1,20 @@
+{
+    "name": "tox2ik/elog",
+    "description": "error_log(print_r($xyz, 1));",
+    "type": "utility",
+    "license": "public-domain",
+    "authors": [
+        {
+            "name": "jaroslav",
+            "email": "jazzoslav@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+	"files": [
+		"src/elog.php",
+		"src/getPrettyTrace.php"
+		]
+	}
+}
