@@ -31,12 +31,12 @@ if (!function_exists('elogr')) {
 			foreach ($last->args as $i => $a) {
 
 				if (class_exists('\Slim\Http\Request') and ($a instanceof \Slim\Http\Request)) {
-					elog( [@$last->class . '@' . @$last->function => $a->getParams() ] );
+					elog(array(@$last->class . '@' . @$last->function => $a->getParams()));
 					break;
 				}
 				
 				if (class_exists('\Illuminate\Http\Request') and ($a instanceof \Illuminate\Http\Request)) {
-					elog( [@$last->class . '@' . @$last->function => $a->all() ] );
+					elog( array(@$last->class . '@' . @$last->function => $a->all()));
 					break;
 				}
 			}
@@ -51,6 +51,6 @@ if (!function_exists('elogm')) {
 		array_shift($db);
 		$last = (object) @$db[0];
 		$caller = @$last->class . '@' . @$last->function;
-		elog([$caller => $data]);
+		elog(array($caller => $data));
 	}
 }
