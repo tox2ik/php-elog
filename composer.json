@@ -14,7 +14,8 @@
     "autoload": {
 	"files": [
 		"src/elog.php",
-		"src/getPrettyTrace.php"
+		"src/getPrettyTrace.php",
+		"src/jTraceEx.php"
 		]
 	}
 }
