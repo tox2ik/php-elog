@@ -1,6 +1,7 @@
 <?php
 
 if (!function_exists('elog')) {
+    // window.elog = function() { return console.log.apply(console, arguments); };
     function elog($e) { 
         error_log(print_r($e, true));
     }
