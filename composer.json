@@ -15,7 +15,8 @@
 	"files": [
 		"src/elog.php",
 		"src/getPrettyTrace.php",
-		"src/jTraceEx.php"
+		"src/jTraceEx.php",
+		"src/timeit.php"
 		]
 	}
 }
