@@ -22,7 +22,7 @@ if (! function_exists('timeitAppend')) {
 	function timeitAppend($identifier, $begin = false) {
 		$now = microtime(1);
 		static $timers;
-		if ($timers === null) $timers = [];
+		if ($timers === null) $timers = array();
 		if (!isset($timers[$identifier])) {
 			$timers[$identifier] = [
 				'prev' => $now,
