@@ -47,11 +47,12 @@ if (!function_exists('elogr')) {
 
 
 if (!function_exists('elogm')) {
-	function elogm($data) {
+	function elogm($data=null) {
 		$db = debug_backtrace();
 		array_shift($db);
 		$last = (object) @$db[0];
 		$caller = @$last->class . '@' . @$last->function;
-		elog(array($caller => $data));
+        if ($data !== null)  return elog(array($caller => $data));
+        elog($caller);
 	}
 }
