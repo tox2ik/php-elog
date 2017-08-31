@@ -1,6 +1,7 @@
 <?php
 
 if (!function_exists('elog')) {
+    // consider using: https://raw.githubusercontent.com/google-code-export/prado3/master/framework/Util/TVarDumper.php
     // window.elog = function() { return console.log.apply(console, arguments); };
     function elog($e) { 
         error_log(print_r($e, true));

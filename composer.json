@@ -16,7 +16,8 @@
 		"src/elog.php",
 		"src/getPrettyTrace.php",
 		"src/jTraceEx.php",
-		"src/timeit.php"
+		"src/timeit.php",
+		"src/TVarDumper.php"
 		]
 	}
 }
