@@ -13,11 +13,12 @@
     "require": {},
     "autoload": {
 	"files": [
+		"src/TVarDumper.php",
 		"src/elog.php",
 		"src/getPrettyTrace.php",
 		"src/jTraceEx.php",
-		"src/timeit.php",
-		"src/TVarDumper.php"
+		"src/setSlimElogErrorHandler.php",
+		"src/timeit.php"
 		]
 	}
 }
