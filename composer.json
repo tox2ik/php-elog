@@ -2,7 +2,7 @@
     "name": "tox2ik/elog",
     "description": "error_log(print_r($xyz, 1));",
     "type": "utility",
-    "license": "public-domain",
+    "license": "0BSD",
     "authors": [
         {
             "name": "jaroslav",
